@@ -1,0 +1,32 @@
+---
+use case
+  name: a descriptive name
+  senario: a more descriptive name
+  trigger: the event that prompts the case
+  description: a breif description
+  actors: a list of non-system entities involved
+  related use cases: 
+    - a list of any related use cases 
+    - i.e. new user prompt at checkout
+  stakeholders: 
+    - a list of business groups that would be interested in 
+    - the results of this use case
+  preconditions: 
+    - a list of things that need to be available
+    - before the case can begin
+  postconditions:
+    - the things that must happen
+    - to conclude that the use case was successful
+  flow of activities:
+    actor:
+      - 1: first step
+      - 2: second step
+    system:
+      - 1.1: reacton to actor step 1
+      - 1.3: trigger for actor step 2
+      - 2.1: reacton to actor step 2
+      - 2.2: validation of actor step 2
+      - 2.3: return final result to actor
+  exception conditions:
+    - 1.1: actor does something dumb
+    - 2.2: actor response fails validation
